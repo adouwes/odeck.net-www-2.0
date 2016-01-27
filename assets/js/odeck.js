@@ -31,7 +31,7 @@ function loadById() {
       output += cardRender(sequence);
       output += "</div><div class='card-action'>share: <a href='?id="+id+"'>"+id;
       output += "</a></div></div></div>";
-
+      $('#id').attr('value', id);
       $("#postdump").html(output);
 
     }, error: function(error){
