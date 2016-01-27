@@ -7737,7 +7737,8 @@ button.close {
 }
 
 .cardmd .card-image img {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  margin-right: 3px;
 }
 
 .cardmd .card-content {
