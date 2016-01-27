@@ -1,136 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
-    <link href="/assets/css/main.css" rel="stylesheet">
-    <title>oDeck Card Logger</title>
-  </head>
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container header-logo">
-            <div class="navbar-header header-logo-sm">
-              <a class="navbar-brand scrollup" href="#">
-                <img alt="Brand" class="hidden-sm hidden-xs" src="/assets/img/oDeckIcon120.png"></a>
-                <img alt="Brand" class="visible-sm visible-xs small-brand" src="/assets/img/oDeckIcon47.png"></a>
-
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32">
+  <link href="/assets/css/main.css" rel="stylesheet">
+  <title>oDeck Card Logger for iOS</title>
+</head>
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container header-logo">
+          <div class="navbar-header header-logo-sm">
+            <a class="navbar-brand scrollup" href="http://odeck.net">
+              <img alt="Brand" class="hidden-sm hidden-xs" src="/assets/img/oDeckIcon120.png"></a>
+              <img alt="Brand" class="visible-sm visible-xs small-brand" src="/assets/img/oDeckIcon47.png"></a>
             </div>
-
             <form class="navbar-form navbar-right">
-
-
               <div class="form-group">
-      					<div class="input-group">
-      						<input id="id" type="text" class="form-control" placeholder="sequence id" name="id">
-      						<span class="input-group-btn">
-      							<button type="submit" class="btn btn-default">Search</button>
-      						</span>
-      					</div>
-      				</div>
-
+                <div class="input-group">
+                  <input id="id" type="text" class="form-control" placeholder="sequence id" name="id">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default">Search</button>
+                  </span>
+                </div>
+              </div>
             </form>
-
           </div>
-      </nav>
+        </nav>
       </div>
     </div>
-<!-- END NAVBAR -->
-
-<div class="container afternav">
-    <div class="row">
-      <!-- Card Projects -->
-      <div class="col-md-8 col-md-offset-2">
-          <div class="cardmd">
-            <div class="card-content">
-
-              <div class="row">
-                <div class="col-xs-4">Drew</div>
-                <div class="col-xs-4 col-xs-offset-4"><p class="text-right">5 hours ago</p></div>
-              </div>
-              <!-- <table class="table">
-                <tr>
-                  <td>Drew</td>
-
-                  <td><p class="text-right">01/15/16 @ 14:32 PST</p></td>
-                  <tr>
-              </table> -->
-            </div>
-
-              <div class="card-image text-center">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-              </div>
-              <div class="card-action">
-                  share: <a href="#" target="new_blank">Hidufhs8</a>
-              </div>
-
-
-
-          </div>
+    <!-- END NAVBAR -->
+    <div class="container afternav">
+      <div class="row">
+        <!-- Card Projects -->
+        <div id="postdump">
+        </div>
       </div>
-
-
-
-      <!-- Card Projects -->
-      <div class="col-md-8 col-md-offset-2">
-          <div class="cardmd">
-            <div class="card-content">
-
-              <div class="row">
-                <div class="col-xs-4">Drew</div>
-                <div class="col-xs-4 col-xs-offset-4"><p class="text-right">5 hours ago</p></div>
-              </div>
-              <!-- <table class="table">
-                <tr>
-                  <td>Drew</td>
-
-                  <td><p class="text-right">01/15/16 @ 14:32 PST</p></td>
-                  <tr>
-              </table> -->
-            </div>
-
-              <div class="card-image text-center">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-                <img src="/assets/img/2C.png">
-              </div>
-              <div class="card-action">
-                  share: <a href="#" target="new_blank">Hidufhs8</a>
-              </div>
-
-
-
-          </div>
-      </div>
-
-
-
     </div>
-</div>
-
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/assets/js/odeck.js"></script>
 
   </body>
-</html>
+  </html>
