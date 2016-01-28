@@ -23,14 +23,18 @@ function loadById() {
       var output = "";
       var username = results[0].get("Username").getUsername();
       var sequence = results[0].get("Sequence");
-      var date = results[0].createdAt;
+      var date1 = results[0].createdAt;
+      //some moment.js fancy work with the date - a little overkill
+      var m = moment(date1);
       var id = results[0].id;
 
+      // this will be cleaned up with ascii art
       output += "<div class='col-md-8 col-md-offset-2'><div class='cardmd'><div class='card-content'><div class='row'>";
-      output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-4 col-xs-offset-4'><p class='text-right'>"+date+"</p></div></div></div><div class='card-image text-center'>";
+      output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-4 col-xs-offset-4'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
       output += cardRender(sequence);
       output += "</div><div class='card-action'>share: <a href='?id="+id+"'>"+id;
       output += "</a></div></div></div>";
+
       $('#id').attr('value', id);
       $("#postdump").html(output);
 
@@ -70,17 +74,20 @@ function getPosts() {
       for (var i in results) {
         var username = results[i].get("Username").getUsername();
         var sequence = results[i].get("Sequence");
-        var date = results[i].createdAt;
+        //moment.js fancy work with the date
+        var date1 = results[i].createdAt;
+        var m = moment(date1);
         var id = results[i].id;
+
+        //silly html formatting
         output += "<div class='col-md-8 col-md-offset-2'><div class='cardmd'><div class='card-content'><div class='row'>";
-        output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-4 col-xs-offset-4'><p class='text-right'>"+date+"</p></div></div></div><div class='card-image text-center'>";
+        output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-6 col-xs-offset-2'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
         output += cardRender(sequence);
         output += "</div><div class='card-action'>share: <a href='?id="+id+"'>"+id;
         output += "</a></div></div></div>";
       }
-
+      //dump everything to the dom
       $("#postdump").html(output);
-
     },
     error: function(error){
       console.log("Query Error:"+error.message);
@@ -90,7 +97,6 @@ function getPosts() {
 
 // if there is a url hash id, load that sequence, if not, load last 10
 // don't need to define id so many times, change to global
-
 var id = getParameterByName('id');
 console.log(id)
 if (id == "") {
