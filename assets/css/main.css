@@ -7677,7 +7677,7 @@ button.close {
 
 @media (min-width: 768px) {
   .header-logo {
-    background-image: url(/assets/img/odecknet.png);
+    background-image: url(/assets/img/odecknet2.png);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation-name: bounceInDown;
@@ -7691,7 +7691,7 @@ button.close {
 
 @media (max-width: 767px) {
   .header-logo-sm {
-    background-image: url(/assets/img/odecknet.png);
+    background-image: url(/assets/img/odecknet2.png);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-animation-name: bounceInDown;
