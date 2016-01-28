@@ -30,7 +30,7 @@ function loadById() {
 
       // this will be cleaned up with ascii art
       output += "<div class='col-md-8 col-md-offset-2'><div class='cardmd'><div class='card-content'><div class='row'>";
-      output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-8'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
+      output += "<div class='col-xs-5'>"+username+"</div><div class='col-xs-7'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
       output += cardRender(sequence);
       output += "</div><div class='card-action'>share: <a href='?id="+id+"'>"+id;
       output += "</a></div></div></div>";
@@ -81,7 +81,7 @@ function getPosts() {
 
         //silly html formatting
         output += "<div class='col-md-8 col-md-offset-2'><div class='cardmd'><div class='card-content'><div class='row'>";
-        output += "<div class='col-xs-4'>"+username+"</div><div class='col-xs-8'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
+        output += "<div class='col-xs-5'>"+username+"</div><div class='col-xs-7'><p class='text-right'>"+m.format("MMM Do YYYY, hh:mm:ss")+"</p></div></div></div><div class='card-image text-center'>";
         output += cardRender(sequence);
         output += "</div><div class='card-action'>share: <a href='?id="+id+"'>"+id;
         output += "</a></div></div></div>";
